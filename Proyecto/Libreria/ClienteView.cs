@@ -145,10 +145,13 @@ namespace Libreria
         {
             try
             {
-                deleteCliente(int.Parse(txtId.Text.Replace(" ", "")));
-                btnAgregar.Enabled = true;
-                btnModificar.Enabled = false;
-                btnEliminar.Enabled = false;
+                if (MessageBox.Show("¿Desea eliminar el registro?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes) {
+                	deleteCliente(int.Parse(txtId.Text.Replace(" ", "")));
+                	btnAgregar.Enabled = true;
+                	btnModificar.Enabled = false;
+                	btnEliminar.Enabled = false;
+            	
+		} 
             }
             catch (Exception i)
             {
