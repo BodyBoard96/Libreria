@@ -122,7 +122,6 @@ namespace Libreria
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            cl = new Clientes();
             if (!validate())
             {
                 addCliente(llenarCliente(false));

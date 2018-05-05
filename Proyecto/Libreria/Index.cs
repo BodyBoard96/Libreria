@@ -184,5 +184,12 @@ namespace Libreria
             frmCl.MdiParent = this;
             frmCl.Show();
         }
+
+        private void facturarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FacturarView frm = new FacturarView();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

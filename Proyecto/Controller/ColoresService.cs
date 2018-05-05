@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class ColoresService
+    public class ColoresService
     {
         private SqlCommand cmd;
         private Conexion con = new Conexion();
@@ -20,7 +20,7 @@ namespace Controller
             Conexion con = new Conexion();
             try
             {
-                string query = "SELECT * FROM colores";
+                string query = "SELECT * FROM colores order by cod_color desc";
                 cmd = new SqlCommand(query, con.getConex());
                 con.Dr = cmd.ExecuteReader();
                 lstColores = new List<Colores>();

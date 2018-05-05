@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class ProductoService
+    public class ProductoService
     {
         private SqlCommand cmd;
         private Conexion con = new Conexion();

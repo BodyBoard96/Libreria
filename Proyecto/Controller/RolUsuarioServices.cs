@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class RolUsuarioServices
+    public class RolUsuarioServices
     {
         private SqlCommand cmd;
         private Conexion con = new Conexion();

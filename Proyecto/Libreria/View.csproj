@@ -64,6 +64,12 @@
     <Compile Include="EmpleadoView.Designer.cs">
       <DependentUpon>EmpleadoView.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacturarView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturarView.Designer.cs">
+      <DependentUpon>FacturarView.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ColorView.resx">
       <DependentUpon>ColorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturarView.resx">
+      <DependentUpon>FacturarView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTemplate.resx">
       <DependentUpon>FormTemplate.cs</DependentUpon>
