@@ -2,7 +2,6 @@
 {
     public class Clientes
     {
-	//Comentario
         private int codCliente;
         private string pNombre;
         private string sNombre;
