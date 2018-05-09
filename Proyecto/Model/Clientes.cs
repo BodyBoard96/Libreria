@@ -12,6 +12,7 @@
         private string nrc;
         private string telefono;
         private string celular;
+		//COmentario; Prueba
 
         public int CodCliente
         {
