@@ -2,6 +2,7 @@
 {
     public class Credito
     {
+        //Prueba desde github
         private int codigoCredito;
         private Factura codFactura;
         private Clientes codCliente;
