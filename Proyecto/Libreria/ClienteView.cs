@@ -130,7 +130,7 @@ namespace Libreria
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            cl = new Clientes();
+            
             if (!validate())
             {
                 updateCliente(llenarCliente(true));

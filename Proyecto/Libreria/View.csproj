@@ -114,6 +114,12 @@
     <Compile Include="RolUsuarioView.Designer.cs">
       <DependentUpon>RolUsuarioView.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchClient.Designer.cs">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="SucursalView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SearchClient.resx">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
