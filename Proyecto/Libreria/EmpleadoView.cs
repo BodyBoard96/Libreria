@@ -91,6 +91,7 @@ namespace Libreria
         private Empleado llenarEmpleado(Boolean v)
         {
            
+
             Empleado obj = new Empleado();
             if (v)
                 obj.CodEmpleado = int.Parse(txtId.Text);
