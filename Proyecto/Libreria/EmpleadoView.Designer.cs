@@ -39,7 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtComsion = new System.Windows.Forms.TextBox();
+            this.txtComision = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtRol = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -141,12 +141,12 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "Telefono:";
             // 
-            // txtComsion
+            // txtComision
             // 
-            this.txtComsion.Location = new System.Drawing.Point(442, 175);
-            this.txtComsion.Name = "txtComsion";
-            this.txtComsion.Size = new System.Drawing.Size(183, 20);
-            this.txtComsion.TabIndex = 35;
+            this.txtComision.Location = new System.Drawing.Point(442, 175);
+            this.txtComision.Name = "txtComision";
+            this.txtComision.Size = new System.Drawing.Size(183, 20);
+            this.txtComision.TabIndex = 35;
             // 
             // label5
             // 
@@ -228,7 +228,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 620);
-            this.Controls.Add(this.txtComsion);
+            this.Controls.Add(this.txtComision);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtRol);
             this.Controls.Add(this.label7);
@@ -276,7 +276,7 @@
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.txtRol, 0);
             this.Controls.SetChildIndex(this.label5, 0);
-            this.Controls.SetChildIndex(this.txtComsion, 0);
+            this.Controls.SetChildIndex(this.txtComision, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -296,7 +296,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtComsion;
+        private System.Windows.Forms.TextBox txtComision;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtRol;
         private System.Windows.Forms.Label label7;
