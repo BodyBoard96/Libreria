@@ -90,8 +90,7 @@ namespace Libreria
 
         private Empleado llenarEmpleado(Boolean v)
         {
-           
-
+            RolUsuario ru = new RolUsuario();
             Empleado obj = new Empleado();
             if (v)
                 obj.CodEmpleado = int.Parse(txtId.Text);
@@ -102,8 +101,7 @@ namespace Libreria
             obj.Celular = txtCel.Text;
             obj.Usuario = txtUsuario.Text;
             obj.Password = txtClave.Text;
-
-            obj.IdRol = RolUsuario.ReferenceEquals(txtRol.Text);
+            obj.IdRol = ru.IdRolUsuario=int.Parse(txtRol.Text);
             obj.Comision = decimal.Parse(txtComision.Text);
             return obj;
         }
