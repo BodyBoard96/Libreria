@@ -101,7 +101,8 @@ namespace Libreria
             obj.Celular = txtCel.Text;
             obj.Usuario = txtUsuario.Text;
             obj.Password = txtClave.Text;
-            obj.IdRol = ru.IdRolUsuario=int.Parse(txtRol.Text);
+            ru.IdRolUsuario = int.Parse(txtRol.Text);
+            obj.IdRol = ru;
             obj.Comision = decimal.Parse(txtComision.Text);
             return obj;
         }
