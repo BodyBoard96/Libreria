@@ -47,10 +47,26 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtCel = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.txtCel = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEmpleados)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // dtgEmpleados
             // 
@@ -59,6 +75,7 @@
             this.dtgEmpleados.Name = "dtgEmpleados";
             this.dtgEmpleados.Size = new System.Drawing.Size(883, 334);
             this.dtgEmpleados.TabIndex = 5;
+            this.dtgEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEmpleados_CellContentClick);
             // 
             // txtId
             // 
@@ -206,14 +223,6 @@
             this.label9.TabIndex = 28;
             this.label9.Text = "Usuario:";
             // 
-            // txtCel
-            // 
-            this.txtCel.Location = new System.Drawing.Point(442, 21);
-            this.txtCel.Name = "txtCel";
-            this.txtCel.ReadOnly = true;
-            this.txtCel.Size = new System.Drawing.Size(183, 20);
-            this.txtCel.TabIndex = 27;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -223,11 +232,19 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Celular: ";
             // 
+            // txtCel
+            // 
+            this.txtCel.Location = new System.Drawing.Point(442, 20);
+            this.txtCel.Name = "txtCel";
+            this.txtCel.Size = new System.Drawing.Size(183, 20);
+            this.txtCel.TabIndex = 36;
+            // 
             // EmpleadoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 620);
+            this.Controls.Add(this.txtCel);
             this.Controls.Add(this.txtComision);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtRol);
@@ -236,7 +253,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtCel);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label4);
@@ -268,7 +284,6 @@
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.txtTelefono, 0);
             this.Controls.SetChildIndex(this.label10, 0);
-            this.Controls.SetChildIndex(this.txtCel, 0);
             this.Controls.SetChildIndex(this.label9, 0);
             this.Controls.SetChildIndex(this.txtUsuario, 0);
             this.Controls.SetChildIndex(this.label8, 0);
@@ -277,6 +292,7 @@
             this.Controls.SetChildIndex(this.txtRol, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.txtComision, 0);
+            this.Controls.SetChildIndex(this.txtCel, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -304,7 +320,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtCel;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCel;
     }
 }

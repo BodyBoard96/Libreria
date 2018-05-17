@@ -106,5 +106,65 @@ namespace Libreria
             obj.Comision = decimal.Parse(txtComision.Text);
             return obj;
         }
+
+        private void dtgEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtId.Text = dtgEmpleados.Rows[e.RowIndex].Cells[0].Value.ToString().Replace(" ", "");
+            txtName.Text = dtgEmpleados.Rows[e.RowIndex].Cells[1].Value.ToString().Replace(" ", "");
+            txtDireccion.Text = dtgEmpleados.Rows[e.RowIndex].Cells[2].Value.ToString().Replace(" ", "");
+            txtCargo.Text = dtgEmpleados.Rows[e.RowIndex].Cells[3].Value.ToString().Replace(" ", "");
+            txtTelefono.Text = dtgEmpleados.Rows[e.RowIndex].Cells[4].Value.ToString().Replace(" ", "");
+            txtCel.Text = dtgEmpleados.Rows[e.RowIndex].Cells[5].Value.ToString().Replace(" ", "");
+            txtUsuario.Text = dtgEmpleados.Rows[e.RowIndex].Cells[6].Value.ToString().Replace(" ", "");
+            txtClave.Text = dtgEmpleados.Rows[e.RowIndex].Cells[7].Value.ToString().Replace(" ", "");
+            txtRol.Text = dtgEmpleados.Rows[e.RowIndex].Cells[8].Value.ToString().Replace(" ", "");
+            txtComision.Text = dtgEmpleados.Rows[e.RowIndex].Cells[9].Value.ToString().Replace(" ", "");
+            btnAgregar.Enabled = false;
+            btnModificar.Enabled = true;
+            btnEliminar.Enabled = true;
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (!validate())
+            {
+                addEmpleado(llenarEmpleado(false));
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (!validate())
+            {
+                updateEmpleado(llenarEmpleado(true));
+                btnAgregar.Enabled = true;
+                btnModificar.Enabled = false;
+                btnEliminar.Enabled = false;
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("¿Desea eliminar el registro?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                {
+                    deleteEmpleado(int.Parse(txtId.Text.Replace(" ", "")));
+                    btnAgregar.Enabled = true;
+                    btnModificar.Enabled = false;
+                    btnEliminar.Enabled = false;
+
+                }
+            }
+            catch (Exception i)
+            {
+                MessageBox.Show("Ocurrio un problema, favor intentar mas tarde");
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
