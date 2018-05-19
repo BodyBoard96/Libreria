@@ -28,140 +28,158 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.txtNIT = new System.Windows.Forms.TextBox();
             this.txtCel = new System.Windows.Forms.TextBox();
-            this.txtRol = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtClave = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtDirec_Prov = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.txtNRC = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtName_ejec = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtName_Prov = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dtgProveedor = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgProveedor)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // txtNIT
+            // 
+            this.txtNIT.Location = new System.Drawing.Point(510, 29);
+            this.txtNIT.Name = "txtNIT";
+            this.txtNIT.Size = new System.Drawing.Size(183, 20);
+            this.txtNIT.TabIndex = 56;
             // 
             // txtCel
             // 
-            this.txtCel.Location = new System.Drawing.Point(446, 11);
+            this.txtCel.Location = new System.Drawing.Point(510, 150);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(183, 20);
-            this.txtCel.TabIndex = 56;
-            // 
-            // txtRol
-            // 
-            this.txtRol.Location = new System.Drawing.Point(446, 133);
-            this.txtRol.Name = "txtRol";
-            this.txtRol.Size = new System.Drawing.Size(183, 20);
-            this.txtRol.TabIndex = 53;
+            this.txtCel.TabIndex = 53;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(357, 140);
+            this.label7.Location = new System.Drawing.Point(397, 157);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 13);
+            this.label7.Size = new System.Drawing.Size(88, 13);
             this.label7.TabIndex = 52;
-            this.label7.Text = "Rol:";
+            this.label7.Text = "Celular ejecutivo:";
             // 
-            // txtClave
+            // txtTelefono
             // 
-            this.txtClave.Location = new System.Drawing.Point(446, 96);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.PasswordChar = '*';
-            this.txtClave.Size = new System.Drawing.Size(183, 20);
-            this.txtClave.TabIndex = 51;
+            this.txtTelefono.Location = new System.Drawing.Point(510, 113);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.PasswordChar = '*';
+            this.txtTelefono.Size = new System.Drawing.Size(183, 20);
+            this.txtTelefono.TabIndex = 51;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(357, 103);
+            this.label8.Location = new System.Drawing.Point(397, 120);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 13);
+            this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 50;
-            this.label8.Text = "Contraseña:";
+            this.label8.Text = "Telefono:";
             // 
-            // txtUsuario
+            // txtDirec_Prov
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(446, 55);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(183, 20);
-            this.txtUsuario.TabIndex = 49;
+            this.txtDirec_Prov.Location = new System.Drawing.Point(510, 72);
+            this.txtDirec_Prov.Name = "txtDirec_Prov";
+            this.txtDirec_Prov.Size = new System.Drawing.Size(183, 20);
+            this.txtDirec_Prov.TabIndex = 49;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(357, 62);
+            this.label9.Location = new System.Drawing.Point(397, 79);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.Size = new System.Drawing.Size(107, 13);
             this.label9.TabIndex = 48;
-            this.label9.Text = "Usuario:";
+            this.label9.Text = "Direccion Proveedor:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(357, 19);
+            this.label10.Location = new System.Drawing.Point(397, 36);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 13);
+            this.label10.Size = new System.Drawing.Size(31, 13);
             this.label10.TabIndex = 47;
-            this.label10.Text = "Celular: ";
+            this.label10.Text = "NIT: ";
             // 
-            // txtCargo
+            // txtNRC
             // 
-            this.txtCargo.Location = new System.Drawing.Point(117, 133);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(183, 20);
-            this.txtCargo.TabIndex = 44;
+            this.txtNRC.Location = new System.Drawing.Point(190, 150);
+            this.txtNRC.Name = "txtNRC";
+            this.txtNRC.Size = new System.Drawing.Size(183, 20);
+            this.txtNRC.TabIndex = 44;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 140);
+            this.label3.Location = new System.Drawing.Point(68, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 43;
-            this.label3.Text = "Cargo:";
+            this.label3.Text = "NRC:";
             // 
-            // txtDireccion
+            // txtName_ejec
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(117, 96);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(183, 20);
-            this.txtDireccion.TabIndex = 42;
+            this.txtName_ejec.Location = new System.Drawing.Point(190, 113);
+            this.txtName_ejec.Name = "txtName_ejec";
+            this.txtName_ejec.Size = new System.Drawing.Size(183, 20);
+            this.txtName_ejec.TabIndex = 42;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 103);
+            this.label6.Location = new System.Drawing.Point(68, 120);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 13);
+            this.label6.Size = new System.Drawing.Size(93, 13);
             this.label6.TabIndex = 41;
-            this.label6.Text = "Dirección:";
+            this.label6.Text = "Nombre ejecutivo:";
             // 
-            // txtName
+            // txtName_Prov
             // 
-            this.txtName.Location = new System.Drawing.Point(117, 55);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(183, 20);
-            this.txtName.TabIndex = 40;
+            this.txtName_Prov.Location = new System.Drawing.Point(190, 72);
+            this.txtName_Prov.Name = "txtName_Prov";
+            this.txtName_Prov.Size = new System.Drawing.Size(183, 20);
+            this.txtName_Prov.TabIndex = 40;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 62);
+            this.label2.Location = new System.Drawing.Point(68, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(99, 13);
             this.label2.TabIndex = 39;
-            this.label2.Text = "Nombre:";
+            this.label2.Text = "Nombre Proveedor:";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(117, 12);
+            this.txtId.Location = new System.Drawing.Point(190, 29);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(183, 20);
@@ -170,30 +188,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 19);
+            this.label1.Location = new System.Drawing.Point(68, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 37;
             this.label1.Text = "Identificador: ";
+            // 
+            // dtgProveedor
+            // 
+            this.dtgProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgProveedor.Location = new System.Drawing.Point(15, 279);
+            this.dtgProveedor.Name = "dtgProveedor";
+            this.dtgProveedor.Size = new System.Drawing.Size(868, 329);
+            this.dtgProveedor.TabIndex = 57;
+            this.dtgProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProveedor_CellContentClick);
             // 
             // ProveedorView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 620);
+            this.Controls.Add(this.dtgProveedor);
+            this.Controls.Add(this.txtNIT);
             this.Controls.Add(this.txtCel);
-            this.Controls.Add(this.txtRol);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtClave);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtDirec_Prov);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtCargo);
+            this.Controls.Add(this.txtNRC);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtName_ejec);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtName_Prov);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
@@ -207,19 +235,21 @@
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.txtId, 0);
             this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.txtName, 0);
+            this.Controls.SetChildIndex(this.txtName_Prov, 0);
             this.Controls.SetChildIndex(this.label6, 0);
-            this.Controls.SetChildIndex(this.txtDireccion, 0);
+            this.Controls.SetChildIndex(this.txtName_ejec, 0);
             this.Controls.SetChildIndex(this.label3, 0);
-            this.Controls.SetChildIndex(this.txtCargo, 0);
+            this.Controls.SetChildIndex(this.txtNRC, 0);
             this.Controls.SetChildIndex(this.label10, 0);
             this.Controls.SetChildIndex(this.label9, 0);
-            this.Controls.SetChildIndex(this.txtUsuario, 0);
+            this.Controls.SetChildIndex(this.txtDirec_Prov, 0);
             this.Controls.SetChildIndex(this.label8, 0);
-            this.Controls.SetChildIndex(this.txtClave, 0);
+            this.Controls.SetChildIndex(this.txtTelefono, 0);
             this.Controls.SetChildIndex(this.label7, 0);
-            this.Controls.SetChildIndex(this.txtRol, 0);
             this.Controls.SetChildIndex(this.txtCel, 0);
+            this.Controls.SetChildIndex(this.txtNIT, 0);
+            this.Controls.SetChildIndex(this.dtgProveedor, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgProveedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,21 +257,22 @@
 
         #endregion
 
+        private System.Windows.Forms.TextBox txtNIT;
         private System.Windows.Forms.TextBox txtCel;
-        private System.Windows.Forms.TextBox txtRol;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtDirec_Prov;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.TextBox txtNRC;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtName_ejec;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtName_Prov;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dtgProveedor;
     }
 }
