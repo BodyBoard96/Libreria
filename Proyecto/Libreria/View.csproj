@@ -160,6 +160,9 @@
     <EmbeddedResource Include="ProveedorView.resx">
       <DependentUpon>ProveedorView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SucursalView.resx">
+      <DependentUpon>SucursalView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
