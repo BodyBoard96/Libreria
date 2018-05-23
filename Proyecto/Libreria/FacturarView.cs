@@ -30,5 +30,10 @@ namespace Libreria
             //sc.Show();
            // sc.Visible = true;
         }
+
+        private void FacturarView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
