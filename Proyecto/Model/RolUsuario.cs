@@ -5,6 +5,7 @@ namespace Model
     {
         private int idRolUsuario; 
         private string nombreRol;
+        private string codigo;
         public int IdRolUsuario
         {
             get
@@ -15,6 +16,19 @@ namespace Model
             set
             {
                 idRolUsuario = value;
+            }
+        }
+
+        public string Codigo
+        {
+            get
+            {
+                return codigo;
+            }
+
+            set
+            {
+                codigo = value;
             }
         }
 

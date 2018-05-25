@@ -3,14 +3,14 @@
     public class Producto
     {
         private int codProducto;
-        private Colores codColor;
-        private Presentacion codPresentacion;
+        private int codColor;
+        private int codPresentacion;
         private string codigoBarras;
         private string nombreProducto;
         private decimal precioCompra;
-        private Proveedor codProveedor;
+        private int codProveedor;
         private decimal precioVenta;
-        private Sucursal sucursal;
+        private int sucursal;
 
         public int CodProducto
         {
@@ -25,7 +25,7 @@
             }
         }
 
-        public Colores CodColor
+        public int CodColor
         {
             get
             {
@@ -38,7 +38,7 @@
             }
         }
 
-        public Presentacion CodPresentacion
+        public int CodPresentacion
         {
             get
             {
@@ -90,7 +90,7 @@
             }
         }
 
-        public Proveedor CodProveedor
+        public int CodProveedor
         {
             get
             {
@@ -116,7 +116,7 @@
             }
         }
 
-        public Sucursal Sucursal
+        public int Sucursal
         {
             get
             {

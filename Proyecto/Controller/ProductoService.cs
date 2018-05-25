@@ -17,10 +17,6 @@ namespace Controller
         {
             List<Producto> lstObj = null;
             Producto obj = null;
-            Colores col = null;
-            Proveedor prov = null;
-            Presentacion pre = null;
-            Sucursal suc = null;
             Conexion con = new Conexion();
             try
             {
@@ -31,23 +27,15 @@ namespace Controller
                 while (con.Dr.Read())
                 {
                     obj = new Producto();
-                    col = new Colores();
-                    prov = new Proveedor();
-                    pre = new Presentacion();
-                    suc = new Sucursal();
                     obj.CodProducto = con.Dr.GetInt32(0);
-                    col.CodColor = con.Dr.GetInt32(1);
-                    obj.CodColor = col;
-                    pre.CodPresentacion = con.Dr.GetInt32(2);
-                    obj.CodPresentacion = pre;
+                    obj.CodColor = con.Dr.GetInt32(1);
+                    obj.CodPresentacion = con.Dr.GetInt32(2);
                     obj.CodigoBarras = con.Dr.GetString(3);
                     obj.NombreProducto = con.Dr.GetString(4);
                     obj.PrecioCompra = con.Dr.GetDecimal(5);
-                    prov.CodProveedor = con.Dr.GetInt32(6);
-                    obj.CodProveedor = prov;
+                    obj.CodProveedor = con.Dr.GetInt32(6);
                     obj.PrecioVenta = con.Dr.GetDecimal(7);
-                    suc.CodSucursal = con.Dr.GetInt32(8);
-                    obj.Sucursal = suc;
+                    obj.Sucursal = con.Dr.GetInt32(8);
                     lstObj.Add(obj);
                 }
             }

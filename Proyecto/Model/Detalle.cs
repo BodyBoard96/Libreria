@@ -3,15 +3,15 @@
     public class Detalle
     {
         private int linea;
-        private Factura codFactura;
-        private Producto codProducto;
-        private Colores codColor;
-        private Presentacion codPresentacion;
+        private string codFactura;
+        private int codProducto;
+        private int codColor;
+        private int codPresentacion;
         private string nombreProducto;
         private decimal precioVenta;
         private int cantidadCompra;
         private decimal total;
-        private TpIVA codIVA;
+        private int codIVA;
 
         public int Linea
         {
@@ -26,7 +26,7 @@
             }
         }
 
-        internal Factura CodFactura
+        internal string CodFactura
         {
             get
             {
@@ -39,7 +39,7 @@
             }
         }
 
-        internal Producto CodProducto
+        internal int CodProducto
         {
             get
             {
@@ -52,7 +52,7 @@
             }
         }
 
-        internal Colores CodColor
+        internal int CodColor
         {
             get
             {
@@ -65,7 +65,7 @@
             }
         }
 
-        internal Presentacion CodPresentacion
+        internal int CodPresentacion
         {
             get
             {
@@ -130,7 +130,7 @@
             }
         }
 
-        internal TpIVA CodIVA
+        internal int CodIVA
         {
             get
             {

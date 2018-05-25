@@ -14,7 +14,6 @@ namespace Controller
         public Empleado validate(string user, string pass) {
             Conexion con = new Conexion();
             Empleado em = null;
-            RolUsuario rl = null;
             try
             {
                 string query = "SELECT * FROM Empleado WHERE nom_usu = @user  AND pasword = @pass";
@@ -25,7 +24,6 @@ namespace Controller
                 while (con.Dr.Read())
                 {
                     em = new Empleado();
-                    rl = new RolUsuario();
                     em.CodEmpleado = con.Dr.GetInt32(0);
                     em.Nombre = con.Dr.GetString(1);
                     em.Direccion = con.Dr.GetString(2);
@@ -34,8 +32,7 @@ namespace Controller
                     em.Celular = con.Dr.GetString(5);
                     em.Usuario = con.Dr.GetString(6);
                     em.Password = con.Dr.GetString(7);
-                    rl.IdRolUsuario = con.Dr.GetInt32(8);
-                    em.IdRol = rl;
+                    em.IdRol = con.Dr.GetInt32(8);
                     em.Comision = con.Dr.GetDecimal(9);
                 }
                 return em;

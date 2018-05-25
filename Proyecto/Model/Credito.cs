@@ -4,8 +4,8 @@
     {
         //Prueba desde github
         private int codigoCredito;
-        private Factura codFactura;
-        private Clientes codCliente;
+        private string codFactura;
+        private int codCliente;
         private decimal total;
         private decimal abono;
         private decimal saldo;
@@ -23,7 +23,7 @@
             }
         }
 
-        internal Factura CodFactura
+        internal string CodFactura
         {
             get
             {
@@ -36,7 +36,7 @@
             }
         }
 
-        internal Clientes CodCliente
+        internal int CodCliente
         {
             get
             {

@@ -2,15 +2,15 @@
 {
     public class ExistenciaProducto
     {
-        private Producto codProducto;
-        private Colores codColor;
-        private Presentacion codPresentacion;
+        private int codProducto;
+        private int codColor;
+        private int codPresentacion;
         private string codBarras;
         private int existencia;
         private decimal precioVenta;
-        private Sucursal codSucursal;
+        private int codSucursal;
 
-        internal Producto CodProducto
+        internal int CodProducto
         {
             get
             {
@@ -23,7 +23,7 @@
             }
         }
 
-        internal Colores CodColor
+        internal int CodColor
         {
             get
             {
@@ -36,7 +36,7 @@
             }
         }
 
-        internal Presentacion CodPresentacion
+        internal int CodPresentacion
         {
             get
             {
@@ -88,7 +88,7 @@
             }
         }
 
-        internal Sucursal CodSucursal
+        internal int CodSucursal
         {
             get
             {

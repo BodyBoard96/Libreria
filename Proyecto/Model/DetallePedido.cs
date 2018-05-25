@@ -2,16 +2,16 @@
 {
     public class DetallePedido
     {
-        private OredenPedido codOrden;
+        private int codOrden;
         private int linea;
-        private Producto codProducto;
-        private Colores codColor;
-        private Presentacion codPresentacion;
+        private int codProducto;
+        private int codColor;
+        private int codPresentacion;
         private decimal precioCompra;
         private int canPre;
         private decimal total;
 
-        internal OredenPedido CodOrden
+        internal int CodOrden
         {
             get
             {
@@ -37,7 +37,7 @@
             }
         }
 
-        internal Producto CodProducto
+        internal int CodProducto
         {
             get
             {
@@ -50,7 +50,7 @@
             }
         }
 
-        internal Colores CodColor
+        internal int CodColor
         {
             get
             {
@@ -63,7 +63,7 @@
             }
         }
 
-        internal Presentacion CodPresentacion
+        internal int CodPresentacion
         {
             get
             {

@@ -15,7 +15,7 @@ namespace Libreria
     public partial class EmpleadoView : FormTemplate
     {
         EmpleadoService clS = null;
-        Empleado cl = null;
+
         public EmpleadoView()
         {
             InitializeComponent();
@@ -28,6 +28,9 @@ namespace Libreria
         {
             clS = new EmpleadoService();
             dtgEmpleados.DataSource = clS.allEmpleado();
+            cmbRol.DisplayMember = "nombreRol";
+            cmbRol.ValueMember = "idRolUsuario";
+            cmbRol.DataSource = new RolUsuarioServices().allSucursales();
         }
         /**
          * Método para insertar empleados en la base
@@ -67,7 +70,7 @@ namespace Libreria
             txtCel.Text = "";
             txtUsuario.Text = "";
             txtClave.Text = "";
-            txtRol.Text = "";
+            cmbRol.SelectedValue = "";
             txtComision.Text = "";
         }
 
@@ -80,7 +83,7 @@ namespace Libreria
             "".Equals(txtCel.Text) ||
             "".Equals(txtUsuario.Text) ||
             "".Equals(txtClave.Text) ||
-            "".Equals(txtRol.Text) ||
+            "".Equals(cmbRol.SelectedValue) ||
             "".Equals(txtComision.Text))
             {
                 return true;
@@ -90,7 +93,6 @@ namespace Libreria
 
         private Empleado llenarEmpleado(Boolean v)
         {
-            RolUsuario ru = new RolUsuario();
             Empleado obj = new Empleado();
             if (v)
                 obj.CodEmpleado = int.Parse(txtId.Text);
@@ -101,8 +103,7 @@ namespace Libreria
             obj.Celular = txtCel.Text;
             obj.Usuario = txtUsuario.Text;
             obj.Password = txtClave.Text;
-            ru.IdRolUsuario = int.Parse(txtRol.Text);
-            obj.IdRol = ru;
+            obj.IdRol = int.Parse(cmbRol.SelectedValue.ToString());
             obj.Comision = decimal.Parse(txtComision.Text);
             return obj;
         }
@@ -117,7 +118,7 @@ namespace Libreria
             txtCel.Text = dtgEmpleados.Rows[e.RowIndex].Cells[5].Value.ToString().Replace(" ", "");
             txtUsuario.Text = dtgEmpleados.Rows[e.RowIndex].Cells[6].Value.ToString().Replace(" ", "");
             txtClave.Text = dtgEmpleados.Rows[e.RowIndex].Cells[7].Value.ToString().Replace(" ", "");
-            txtRol.Text = dtgEmpleados.Rows[e.RowIndex].Cells[8].Value.ToString().Replace(" ", "");
+            cmbRol.SelectedValue  = int.Parse(dtgEmpleados.Rows[e.RowIndex].Cells[8].Value.ToString().Replace(" ", ""));
             txtComision.Text = dtgEmpleados.Rows[e.RowIndex].Cells[9].Value.ToString().Replace(" ", "");
             btnAgregar.Enabled = false;
             btnModificar.Enabled = true;

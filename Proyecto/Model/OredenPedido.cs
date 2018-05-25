@@ -5,7 +5,7 @@ namespace Model
     public class OredenPedido
     {
         private int codOrden;
-        private Proveedor codProveedor;
+        private int codProveedor;
         private DateTime fechaPedido;
 
         public int CodOrden
@@ -34,7 +34,7 @@ namespace Model
             }
         }
 
-        internal Proveedor CodProveedor
+        internal int CodProveedor
         {
             get
             {

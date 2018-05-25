@@ -12,7 +12,7 @@ namespace Model
         private String celular;
         private String usuario;
         private String password;
-        private RolUsuario idRol;
+        private int idRol;
         private decimal comision;
 
         public int CodEmpleado
@@ -112,7 +112,7 @@ namespace Model
             }
         }
 
-        public RolUsuario IdRol
+        public int IdRol
         {
             get
             {
