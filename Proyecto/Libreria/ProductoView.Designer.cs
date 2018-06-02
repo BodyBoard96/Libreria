@@ -51,7 +51,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(376, 145);
+            this.label8.Location = new System.Drawing.Point(384, 144);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 13);
             this.label8.TabIndex = 50;
@@ -167,7 +167,7 @@
             // CmbCod_sucursal
             // 
             this.CmbCod_sucursal.FormattingEnabled = true;
-            this.CmbCod_sucursal.Location = new System.Drawing.Point(494, 142);
+            this.CmbCod_sucursal.Location = new System.Drawing.Point(494, 140);
             this.CmbCod_sucursal.Name = "CmbCod_sucursal";
             this.CmbCod_sucursal.Size = new System.Drawing.Size(183, 21);
             this.CmbCod_sucursal.TabIndex = 58;
