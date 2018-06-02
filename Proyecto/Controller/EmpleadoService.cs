@@ -28,7 +28,6 @@ namespace Controller
                 while (con.Dr.Read())
                 {
                     obj = new Empleado();
-                    rl = new RolUsuario();
                     obj.CodEmpleado = con.Dr.GetInt32(0);
                     obj.Nombre = con.Dr.GetString(1);
                     obj.Direccion = con.Dr.GetString(2);
@@ -37,8 +36,7 @@ namespace Controller
                     obj.Celular = con.Dr.GetString(5);
                     obj.Usuario = con.Dr.GetString(6);
                     obj.Password = con.Dr.GetString(7);
-                    rl.IdRolUsuario = con.Dr.GetInt32(8);
-                    obj.IdRol = rl;
+                    obj.IdRol = con.Dr.GetInt32(8);
                     obj.Comision = con.Dr.GetDecimal(9);
                     lstObj.Add(obj);
                 }
@@ -89,7 +87,7 @@ namespace Controller
             {
                 string query = "UPDATE Empleado SET ";
                 query += "nom_emp=@nom_emp, dir_emp=@dir_emp, cargo=@cargo, telefono=@telefono, cel=@cel, nom_usu=@nom_usu, pasword=@pasword, id_rol_usuario=@id_rol, comision=@comision";
-                query += "WHERE cod_emp = @cod ";
+                query += " WHERE cod_emp = @cod ";
                 cmd = new SqlCommand(query, con.getConex());
                 cmd.Parameters.AddWithValue("@nom_emp", cl.Nombre);
                 cmd.Parameters.AddWithValue("@dir_emp", cl.Direccion);

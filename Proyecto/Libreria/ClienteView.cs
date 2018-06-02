@@ -124,7 +124,7 @@ namespace Libreria
         {
             if (!validate())
             {
-                addCliente(llenarCliente(false));
+                addCliente(llenarUsuario(false));
             }
         }
 

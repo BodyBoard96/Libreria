@@ -5,7 +5,7 @@ namespace Model
     public class RegRecibido
     {
         private int codRes;
-        private OredenPedido codOrden;
+        private int codOrden;
         private DateTime fechaRecibido;
         private decimal totalPago;
         private decimal totalIVA;
@@ -23,7 +23,7 @@ namespace Model
             }
         }
 
-        internal OredenPedido CodOrden
+        internal int CodOrden
         {
             get
             {

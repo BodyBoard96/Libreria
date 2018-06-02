@@ -29,6 +29,7 @@ namespace Controller
                     cl = new RolUsuario();
                     cl.IdRolUsuario = con.Dr.GetInt32(0);
                     cl.NombreRol = con.Dr.GetString(1);
+                    cl.Codigo = con.Dr.GetString(2);
                     lstRoles.Add(cl);
                 }
             }
@@ -76,9 +77,10 @@ namespace Controller
         {
             try
             {
-                string query = "INSERT INTO rol_usuario VALUES (@nombreRol)";
+                string query = "INSERT INTO rol_usuario VALUES (@nombreRol,@cod)";
                 cmd = new SqlCommand(query, con.getConex());
                 cmd.Parameters.AddWithValue("@nombreRol", cl.NombreRol);
+                cmd.Parameters.AddWithValue("@cod", cl.Codigo);
                 if (cmd.ExecuteNonQuery() == 1)
                     return msj = "Rol guardado con éxito!";
             }
@@ -97,9 +99,10 @@ namespace Controller
             try
             {
                 string query = "UPDATE rol_usuario SET ";
-                query += "nombreRol=@name WHERE id_rol_usuario=@id";
+                query += "nombreRol=@name, codigo=@cod WHERE id_rol_usuario=@id";
                 cmd = new SqlCommand(query, con.getConex());
                 cmd.Parameters.AddWithValue("@name", cl.NombreRol);
+                cmd.Parameters.AddWithValue("@cod", cl.Codigo);
                 cmd.Parameters.AddWithValue("@id", cl.IdRolUsuario);
                 if (cmd.ExecuteNonQuery() == 1)
                     return msj = "Rol modificado con éxito!";

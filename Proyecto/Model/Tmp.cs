@@ -2,11 +2,11 @@
 {
     public class Tmp
     {
-        private Producto codProducto;
-        private Colores codColor;
-        private Presentacion codPresentacion;
+        private int codProducto;
+        private int codColor;
+        private int codPresentacion;
         private decimal val;
-        internal Producto CodProducto
+        internal int CodProducto
         {
             get
             {
@@ -19,7 +19,7 @@
             }
         }
 
-        internal Colores CodColor
+        internal int CodColor
         {
             get
             {
@@ -32,7 +32,7 @@
             }
         }
 
-        internal Presentacion CodPresentacion
+        internal int CodPresentacion
         {
             get
             {

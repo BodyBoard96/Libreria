@@ -41,7 +41,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtComision = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtRol = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCel = new System.Windows.Forms.TextBox();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,13 +174,6 @@
             this.label5.TabIndex = 34;
             this.label5.Text = "Comision:";
             // 
-            // txtRol
-            // 
-            this.txtRol.Location = new System.Drawing.Point(442, 142);
-            this.txtRol.Name = "txtRol";
-            this.txtRol.Size = new System.Drawing.Size(183, 20);
-            this.txtRol.TabIndex = 33;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -239,15 +232,26 @@
             this.txtCel.Size = new System.Drawing.Size(183, 20);
             this.txtCel.TabIndex = 36;
             // 
+            // cmbRol
+            // 
+            this.cmbRol.FormattingEnabled = true;
+            this.cmbRol.Items.AddRange(new object[] {
+            "Seleccione..."});
+            this.cmbRol.Location = new System.Drawing.Point(442, 141);
+            this.cmbRol.Name = "cmbRol";
+            this.cmbRol.Size = new System.Drawing.Size(183, 21);
+            this.cmbRol.TabIndex = 37;
+            this.cmbRol.Text = "Seleccione..";
+            // 
             // EmpleadoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 620);
+            this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.txtCel);
             this.Controls.Add(this.txtComision);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtRol);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtClave);
             this.Controls.Add(this.label8);
@@ -289,10 +293,10 @@
             this.Controls.SetChildIndex(this.label8, 0);
             this.Controls.SetChildIndex(this.txtClave, 0);
             this.Controls.SetChildIndex(this.label7, 0);
-            this.Controls.SetChildIndex(this.txtRol, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.txtComision, 0);
             this.Controls.SetChildIndex(this.txtCel, 0);
+            this.Controls.SetChildIndex(this.cmbRol, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -314,7 +318,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtComision;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtRol;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.Label label8;
@@ -322,5 +325,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCel;
+        private System.Windows.Forms.ComboBox cmbRol;
     }
 }

@@ -6,17 +6,17 @@ namespace Model
     {
         private string codFactura;
         private DateTime fechaFacturacion;
-        private Sucursal codSucursal;
+        private int codSucursal;
         private string nrcDueno;
-        private Empleado codEmpleado;
-        private Clientes codCliente;
+        private int codEmpleado;
+        private int codCliente;
         private string descripcion;
-        private TipoPago codTipoPago;
+        private int codTipoPago;
         private string numeroTarjeta;
         private decimal descuento;
         private decimal total;
         private decimal IVA;
-        private EstadoFactura codEstado;
+        private int codEstado;
         public string CodFactura
         {
             get
@@ -43,7 +43,7 @@ namespace Model
             }
         }
 
-        internal Sucursal CodSucursal
+        internal int CodSucursal
         {
             get
             {
@@ -69,7 +69,7 @@ namespace Model
             }
         }
 
-        internal Empleado CodEmpleado
+        internal int CodEmpleado
         {
             get
             {
@@ -82,7 +82,7 @@ namespace Model
             }
         }
 
-        internal Clientes CodCliente
+        internal int CodCliente
         {
             get
             {
@@ -108,7 +108,7 @@ namespace Model
             }
         }
 
-        internal TipoPago CodTipoPago
+        internal int CodTipoPago
         {
             get
             {
@@ -173,7 +173,7 @@ namespace Model
             }
         }
 
-        internal EstadoFactura CodEstado
+        internal int CodEstado
         {
             get
             {
